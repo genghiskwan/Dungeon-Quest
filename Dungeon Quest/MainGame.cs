@@ -22,6 +22,7 @@ namespace Dungeon_Quest
                     characterName = Console.ReadLine();
                 }
 
+                // game start dialogue
                 Console.WriteLine("");
                 GameUI.ColoredWrite("An old man, trembling and covered in soot, grabs your arm.\n", ConsoleColor.Green);
                 Thread.Sleep(1500);

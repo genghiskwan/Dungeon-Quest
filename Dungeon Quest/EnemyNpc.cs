@@ -21,7 +21,8 @@ namespace Dungeon_Quest
         public bool isDead = false;
 
         public EnemyNpc(int npcClass, int firstDungeonCheck)
-        {
+        {   
+            // enemy types and stats
             Stats = new int[7];
             switch (npcClass)
             {

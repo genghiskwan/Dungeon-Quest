@@ -17,7 +17,7 @@ namespace Dungeon_Quest
             int round = 1;
 
             if (npcEnemy.NpcType() == "Orc")
-            {
+            {   // enemy intros
                 GameUI.ColoredWrite($"An {npcEnemy.NpcType()} has appeared!\n", ConsoleColor.Red);                
                 Console.WriteLine("");
             }
@@ -176,7 +176,8 @@ namespace Dungeon_Quest
                     int randomDrop = rand.Next(0, 3);
 
                     if (npcEnemy.NpcType() != "Xulgath the Soul Eater")
-                    {
+                    {   
+                        // loot drop after battle
                         if (randomDrop == 2 && !myPlayer.HasShield())
                         {
                             // shield drop
